@@ -3,11 +3,12 @@ package hw12;
 public class Book {
     private String title;
     private int year;
+    private String author;
 
-    public Book(String title, int year) {
+    public Book(String author,String title, int year) {
         this.title = title;
         this.year = year;
-
+        this.author = author;
     }
 
     public String getTitle() {
@@ -16,6 +17,10 @@ public class Book {
 
     public int getYear() {
         return this.year;
+    }
+
+    public String getAuthor() {
+        return this.author;
     }
 
     public void setYear(int year) {
